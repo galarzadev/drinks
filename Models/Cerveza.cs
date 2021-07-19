@@ -6,18 +6,27 @@ using System.Threading.Tasks;
 
 namespace drinks.Models
 {
-    class Cerveza : Bebida, IBebidaAlcoholica
+    public class Cerveza : Bebida, IBebidaAlcoholica
     {
         public int Alcohol { get; set; }
         public string Marca { get; set; }
+
+        public int id { get; set; }
+        //ña minuscula es mala practica
         //public Cerveza() : base("Cerveza", 500)
         public void MaxRecomendado() {
             Console.WriteLine("El máximo permitido son 10");
         }
-        public Cerveza(int Cantidad,string Nombre="Cerveza")
-            : base(Nombre, Cantidad)
+/*        public Cerveza()
+            : base(null, 0)
         {
 
         }
+        public Cerveza(string Nombre, int Alcohol) : base()
+        {
+            this.Nombre = Nombre;
+            this.Alcohol = Alcohol;
+        }*/
+
     }
 }

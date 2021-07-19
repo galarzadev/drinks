@@ -9,14 +9,14 @@ namespace drinks.Models
 {
     class CervezaBD
     {
-        private string connectionString
+        /*private string connectionString
             = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=FundamentosCSharp;Integrated Security=True";
         public List<Cerveza> Get()
         {
             List<Cerveza> cervezas = new List<Cerveza>();
 
             string query = "select nombre, marca, alcohol, cantidad from cerveza";
-
+            <
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 SqlCommand command = new SqlCommand(query, connection);
@@ -27,7 +27,7 @@ namespace drinks.Models
                 {
                     int Cantidad = reader.GetInt32(3);
                     string Nombre = reader.GetString(0);
-                    Cerveza cerveza = new Cerveza(Cantidad, Nombre);
+                    Cerveza cerveza = new Cerveza(Nombre, Cantidad);
                     cerveza.Alcohol = reader.GetInt32(2);
                     cerveza.Marca = reader.GetString(1);
                     cervezas.Add(cerveza);
@@ -91,6 +91,6 @@ namespace drinks.Models
 
                 connection.Close();
             }
-        }
+        }*/
     }
 }

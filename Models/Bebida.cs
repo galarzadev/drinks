@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace drinks.Models
 {
-    class Bebida
+    public class Bebida
     {
         public string Nombre { get; set; }
 
@@ -17,6 +17,11 @@ namespace drinks.Models
             this.Nombre = Nombre;
             this.Cantidad = Cantidad;
         }
+
+        public Bebida()
+        {
+        }
+
         public void Beberse(int CuantoBebio)
         {
             this.Cantidad -= CuantoBebio;

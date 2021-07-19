@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace drinks.Models
 {
-    public class Post
+    public class Post : IRequestable
     {
         public int userId { get; set; }
         public int id { get; set; }
